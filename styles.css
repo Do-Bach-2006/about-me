@@ -1,0 +1,139 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * TODO: define a set of color ( background , foreground , red , blue , yellow , green , black , white ) to use and switch between them 
+ * */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+/****** styling the display box and its border ******/
+
+#displayBox {
+  width: 58vh;
+  height: 78vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6vh;
+  margin: auto;
+  padding: 5vh;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+/* the background box is use to style the border of the displayBox*/
+#backgroundBox {
+  position: relative;
+  background-color: white;
+  border-bottom: 7vh outset yellow;
+  border-radius: 20px;
+
+  width: 60vh;
+  height: 83vh;
+}
+
+/****** styling the image and its border ******/
+
+img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 60%;
+}
+
+/* we select the div that cover the image tag*/
+#displayBox > div:nth-of-type(1) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid yellow;
+  border-left-color: transparent;
+}
+
+#displayBox > h4 {
+  background-color: blue;
+  border-radius: 10px;
+  padding: 1.5vh 2.5vh; /*make the box larger*/
+}
+
+h4,
+h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vh;
+}
+h4,
+p {
+  font-size: 2vh;
+}
+
+/****** styling the icon box ******/
+.icon {
+  border: transparent;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 3.5vh;
+  background-color: transparent;
+}
+
+.icon:hover {
+  background-color: green;
+  color: blue;
+}
+
+#iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/****** styling the top left button ******/
+
+/* we select the last icon*/
+#displayBox > i:last-child {
+  position: absolute;
+  top: -4%;
+  left: -2%;
+  background-color: red;
+  color: green;
+}
+
+/****** some other styling ******/
+/* the grouping with h1 and h2*/
+#displayBox > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
