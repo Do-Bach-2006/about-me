@@ -51,6 +51,14 @@ body {
 
   width: 60vh;
   height: 83vh;
+
+  /* shadow of the box*/
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /****** styling the image and its border ******/
@@ -62,7 +70,7 @@ img {
   border-radius: 60%;
 }
 
-/* we select the div that cover the image tag*/
+/* we select the background div that cover the image tag*/
 #displayBox > div:nth-of-type(1) {
   width: 50%;
   height: 100%;
@@ -99,7 +107,7 @@ p {
 /****** styling the icon box ******/
 .icon {
   border: transparent;
-  border-radius: 20px;
+  border-radius: 50%;
   padding: 10px;
   margin: 0 10px;
   font-size: 3.5vh;
@@ -119,8 +127,8 @@ p {
 
 /****** styling the top left button ******/
 
-/* we select the last icon*/
-#displayBox > i:last-child {
+/* we select the top left icon*/
+#changeThemeButton {
   position: absolute;
   top: -4%;
   left: -2%;

@@ -9,7 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="compoments/themes/classic.css"
+      id="themeStyleSheet"
+    />
+    <!-- <link rel="stylesheet" href="compoments/themes/classic-dark.css" /> -->
   </head>
+
   <body>
     <!-- the background of the display box, this backgroundBox is use to style the displayBox with a beautiful border -->
     <div id="backgroundBox">
@@ -19,12 +26,15 @@
         </div>
         <div>
           <h1>GnomeRight</h1>
-          <h4>Junior Developer</h4>
+          <h4 class="job-title">Junior Developer</h4>
         </div>
         <p>
-          A student who into <span>programming</span> and <span>computer</span>.
-          Currently playing with frontend to determine if I should be a
-          fullstack developer
+          Hi! My name is <span class="special-texts">Đỗ Bách</span>, and I have
+          a deep passion for <span class="special-texts">computers</span> and
+          <span class="special-texts">programming</span> . My aspiration is to
+          create a free and open-source software (FOSS) that empowers people to
+          navigate life's challenges, inspired by the timeless principles of
+          Stoicism and Christianity.
         </p>
         <h4>dobachk4@gmail.com</h4>
         <div class="" id="iconBox">
@@ -35,7 +45,11 @@
           <i class="nf nf-fa-github icon"></i>
           <i class="nf nf-fa-dev icon"></i>
         </div>
-        <i class="nf nf-md-white_balance_sunny icon"></i>
+        <i
+          class="nf nf-fae-palette_color icon"
+          id="changeThemeButton"
+          onclick="changeTheme()"
+        ></i>
       </div>
     </div>
 
