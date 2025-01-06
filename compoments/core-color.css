@@ -1,0 +1,59 @@
+/*background*/
+body,
+html {
+  background-color: var(--background);
+}
+
+/* box */
+#displayBox {
+  background-color: var(--box-background);
+  border: transparent;
+}
+
+/* background of the box*/
+#backgroundBox {
+  background-color: var(--box-background);
+  border-bottom: 7vh solid var(--box-border);
+}
+
+/* image */
+#displayBox > div:nth-of-type(1) {
+  background-color: var(--image-background);
+  border: 2px solid var(--image-border);
+  border-left-color: transparent; /* circle without the left half*/
+}
+
+/* email */
+#displayBox > h4 {
+  background-color: var(--email-background);
+  color: var(--email-color);
+}
+
+.icon {
+  background-color: transparent;
+  border: transparent;
+  color: var(--icon);
+}
+
+.icon:hover {
+  background-color: var(--icon);
+  color: var(--box-background);
+}
+
+#changeThemeButton {
+  background-color: var(--topleft-button-background);
+  color: var(--topleft-button-color);
+}
+
+p,
+h1 {
+  color: var(--text-color);
+}
+
+.job-title {
+  color: var(--job-color);
+}
+
+.special-texts {
+  color: var(--special-texts-color);
+}
